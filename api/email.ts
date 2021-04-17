@@ -29,6 +29,7 @@ const sendEmail = async ({ name, email, from, body }: any) => {
 
 export default async (req: VercelRequest, res: VercelResponse) => {
   if (req.method === 'POST') {
+    console.log(req)
     const { name, email, from, body } = req.body
     try {
       await sendEmail({ name, email, from, body })
