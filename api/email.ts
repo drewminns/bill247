@@ -36,6 +36,12 @@ const sendEmail = async ({ name, email, from, body }: any) => {
       ],
     }),
   })
+    .then((res) => {
+      console.log(res)
+    })
+    .catch((err) => {
+      console.log(err)
+    })
 }
 
 export default async (req: VercelRequest, res: VercelResponse) => {
