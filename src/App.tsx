@@ -52,7 +52,7 @@ export const App = () => {
       <header className="mt-16 text-center">
         <h1 className="text-5xl sm:text-7xl font-bold tracking-tight mb-2 text-purple-500 mb-4">
           <a href="https://healthydebate.ca/opinions/denying-paid-sick-days/">
-            Pain sick days can help end the pandemic.
+            Paid sick days can help end the pandemic.
           </a>
         </h1>
         <p className="text-xl md:text-3xl font-bold tracking-tight mb-2">
