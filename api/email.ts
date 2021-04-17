@@ -6,9 +6,12 @@ sgMail.setApiKey(sendgridkey)
 
 const sendEmail = async ({ name, email, from, body }: any) => {
   const msg = {
-    to: 'dminns@gmail.com',
-    from,
-    subject: 'Sending with Twilio SendGrid is Fun',
+    to: email,
+    from: {
+      name,
+      email: from,
+    },
+    subject: 'Your attention on Bill 247',
     html: body,
   }
   try {
