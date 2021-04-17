@@ -49,7 +49,7 @@ export const App = () => {
 
   return (
     <div className="px-2 md:px-0 container mx-auto max-w-screen-md">
-      <header className="mt-16 text-center ">
+      <header className="mt-16 text-center">
         <h1 className="text-5xl sm:text-7xl font-bold tracking-tight mb-2 text-yellow-500 mb-4">
           <a href="https://healthydebate.ca/opinions/denying-paid-sick-days/">
             Denying sick days is driving the pandemic.
@@ -70,7 +70,7 @@ export const App = () => {
       </header>
       {!fieldValues && !mpValues ? (
         <>
-          <div className="mt-8 ">
+          <div className="mt-12">
             <ol className="list-decimal space-y-4 text-gray-600 list-inside text-sm">
               <li>
                 Select your riding. If you don’t know the name of your riding,{' '}
@@ -94,7 +94,7 @@ export const App = () => {
       ) : null}
 
       {fieldValues && mpValues && !success ? (
-        <div className="my-6">
+        <div className="my-8">
           <p className="text-gray-500 text-xs text-center mb-1">
             Pssst. Feel free to edit the note before you send it.
           </p>
@@ -119,7 +119,7 @@ export const App = () => {
       ) : null}
 
       {success ? (
-        <div className="text-center py-6">
+        <div className="text-center py-8">
           <p className="text-green-500 text-4xl font-bold">Sent!</p>
           <p className="text-xl">Thank you. Please share this link and ask others to contact their MPP's.</p>
           <button onClick={handleReset} className="font-semibold py-3 px-4 bg-gray-900 text-white rounded-md mt-4">
@@ -128,7 +128,7 @@ export const App = () => {
         </div>
       ) : null}
 
-      <div className="border-t pt-6">
+      <div className="border-t pt-10">
         <h2 className="text-3xl font-bold mb-6">Resources</h2>
         <ul className="list-inside list-disc space-y-3 text-sm underline">
           <li>
@@ -162,7 +162,7 @@ export const App = () => {
         </ul>
       </div>
 
-      <footer className="py-8 text-center text-gray-500">
+      <footer className="py-12 text-center text-gray-500">
         <span role="img" aria-label="wave emoji">
           👋
         </span>{' '}
