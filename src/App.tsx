@@ -50,21 +50,18 @@ export const App = () => {
   return (
     <div className="px-2 md:px-0 container mx-auto max-w-screen-md">
       <header className="mt-16 text-center">
-        <h1 className="text-5xl sm:text-7xl font-bold tracking-tight mb-2 text-yellow-500 mb-4">
+        <h1 className="text-5xl sm:text-7xl font-bold tracking-tight mb-2 text-purple-500 mb-4">
           <a href="https://healthydebate.ca/opinions/denying-paid-sick-days/">
-            Denying sick days is driving the pandemic.
+            Pain sick days can help end the pandemic.
           </a>
         </h1>
         <p className="text-xl md:text-3xl font-bold tracking-tight mb-2">
-          We have an opportunity to make a critical decision.
-        </p>
-        <p className="text-lg tracking-tight text-gray-500">
-          Ask your MPP to support{' '}
+          Tell your MPP to support Bill 247 —{' '}
           <a
             href="https://www.ola.org/en/legislative-business/bills/parliament-42/session-1/bill-247"
             className="underline"
           >
-            Bill 247, Paid Personal Emergency Leave Now Act, 2021.
+            Paid Personal Emergency Leave Now Act.
           </a>
         </p>
       </header>
@@ -107,7 +104,10 @@ export const App = () => {
               handleChangeCB={setDocValue}
             />
           </div>
-          <button className="text-white font-semibold bg-green-500 py-3 px-5 rounded-md" onClick={sendEmail}>
+          <button
+            className="text-white font-semibold bg-gray-900 py-3 px-5 rounded-md w-full md:w-auto"
+            onClick={sendEmail}
+          >
             Send email
           </button>
           {errors ? (

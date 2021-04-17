@@ -31,7 +31,7 @@ export const Form = ({ formCallback }: { formCallback: any }) => {
     <div>
       <form onSubmit={handleSubmit(onSubmit)} className="md:flex flex-wrap">
         <label htmlFor="emailAddress" className="block md:w-1/2 mb-6 md:pr-6">
-          <span className="text-gray-700">Email Address</span>
+          <span className="text-gray-700">Your Email Address</span>
           <input
             type="email"
             {...register('emailAddress', { required: true })}
@@ -78,7 +78,9 @@ export const Form = ({ formCallback }: { formCallback: any }) => {
           </select>
           {errors.riding ? <p className="text-sm text-red-500">Please select your postal code</p> : null}
         </label>
-        <button className="text-white font-semibold bg-gray-900 py-3 px-5 rounded-md">Craft my email</button>
+        <button className="text-white font-semibold bg-gray-900 py-3 px-5 rounded-md w-full md:w-auto">
+          Preview my email
+        </button>
       </form>
     </div>
   )
