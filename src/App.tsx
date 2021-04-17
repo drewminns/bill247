@@ -19,10 +19,18 @@ export const App = () => {
     setFieldValues(data)
   }
 
+  const handleReset = () => {
+    setSuccess(false)
+    setErrors(false)
+    setMPValues(null)
+    setDocValue(null)
+    setFieldValues(null)
+  }
+
   const sendEmail = async () => {
     const body = {
       name: fieldValues?.name,
-      from: fieldValues?.email,
+      from: fieldValues?.emailAddress,
       email: 'dminns@gmail.com',
       body: docValue,
     }
@@ -102,7 +110,17 @@ export const App = () => {
           <button className="text-white font-semibold bg-green-500 py-3 px-5 rounded-md" onClick={sendEmail}>
             Send email
           </button>
-          {success ? <p className="text-sm text-green-400">Sent!</p> : null}
+          {success ? (
+            <div>
+              <p className="text-green-400">Sent!</p>
+              <button onClick={handleReset}>Send another?</button>
+            </div>
+          ) : null}
+          {errors ? (
+            <div>
+              <p className="text-red-400">Error!</p>
+            </div>
+          ) : null}
         </div>
       ) : null}
 

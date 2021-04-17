@@ -21,6 +21,7 @@ const sendEmail = async ({ name, email, from, body }: any) => {
 
     if (error.response) {
       console.error(error.response.body)
+      throw new Error(error.response.body)
     }
   }
 }
@@ -28,8 +29,12 @@ const sendEmail = async ({ name, email, from, body }: any) => {
 export default async (req: VercelRequest, res: VercelResponse) => {
   if (req.method === 'POST') {
     const { name, email, from, body } = req.body
-    await sendEmail({ name, email, from, body })
-    return res.status(200).end()
+    try {
+      await sendEmail({ name, email, from, body })
+      return res.status(200).json({ success: true })
+    } catch (err) {
+      return res.status(200).json({ success: false })
+    }
   }
   return res.status(404).json({
     error: {

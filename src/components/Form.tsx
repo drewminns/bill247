@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 
 import { MPS } from '../mps'
 
-export type FormState = { riding: string; name: string; email: string; postalcode: string }
+export type FormState = { riding: string; name: string; emailAddress: string; postalcode: string }
 
 function compareStrings(a: string, b: string) {
   // Assuming you want case-insensitive comparison
