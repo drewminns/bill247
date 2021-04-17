@@ -31,7 +31,7 @@ export const App = () => {
     const body = {
       name: fieldValues?.name,
       from: fieldValues?.emailAddress,
-      email: 'dminns@gmail.com',
+      email: mpValues?.email,
       body: docValue,
     }
     try {
@@ -174,6 +174,12 @@ export const App = () => {
         <a href="https://dvxd.co" className="text-purple-600">
           DVXD
         </a>
+        <p>
+          Found a bug or something missing?{' '}
+          <a href="mailto:drew@usegoodnbr.com" className="text-purple-600">
+            Email me and let me know.
+          </a>
+        </p>
       </footer>
     </div>
   )
