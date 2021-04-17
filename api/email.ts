@@ -5,13 +5,22 @@ const sendgridkey = process.env.sendgrid_bill247_key || ''
 sgMail.setApiKey(sendgridkey)
 
 const sendEmail = async ({ name, email, from, body }: any) => {
+  const cc = [from]
+  if (email !== 'horwatha-qp@ndp.on.ca') {
+    cc.push('horwatha-qp@ndp.on.ca')
+  }
+
+  if (email !== 'doug.fordco@pc.ola.org') {
+    cc.push('doug.fordco@pc.ola.org')
+  }
+
   const msg = {
     to: email,
     from: {
       name,
       email: 'community@usegoodnbr.com',
     },
-    cc: [from, 'doug.fordco@pc.ola.org', 'horwatha-qp@ndp.on.ca'],
+    cc,
     reply_to: from,
     subject: `Constituent Request - ${name} supports Bill 247`,
     html: body,
