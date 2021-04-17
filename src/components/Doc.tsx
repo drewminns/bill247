@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import { HtmlEditor, Editor } from '@aeaton/react-prosemirror'
 import { plugins, schema } from '@aeaton/react-prosemirror-config-default'
 
-type DocProps = { name: string; firstName: string; lastName: string }
+type DocProps = { name: string; firstName: string; lastName: string; postalCode: string }
 
-export const Doc = ({ name, firstName, lastName }: DocProps) => {
+export const Doc = ({ name, firstName, lastName, postalCode }: DocProps) => {
   const initialValue = `
     <p>Dear ${firstName} ${lastName}</p>
     <p></p>
-    <p>My name is ${name} and I am a constituent in your district. I am writing to you to express my support for Bill 247, Paid Personal Emergency Leave Now Act, 2021.</p>
+    <p>My name is ${name} and I am a constituent in your district at ${postalCode.toUpperCase()}. I am writing to you to express my support for Bill 247, Paid Personal Emergency Leave Now Act, 2021.</p>
     <p></p>
     <p>Paid personal emergency leave allows employers and employees alike to succeed, especially during times of public health emergencies.</p>
     <p></p>

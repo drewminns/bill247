@@ -2,44 +2,63 @@ export const MPS = [
   {
     firstName: 'Deepak',
     lastName: 'Anand',
+
     email: 'deepak.anand@pc.ola.org',
+
     ridingName: 'Mississauga—Malton',
   },
   {
     firstName: 'Jill',
     lastName: 'Andrew',
+
     email: 'JAndrew-QP@ndp.on.ca',
+
     ridingName: "Toronto—St. Paul's",
   },
   {
     firstName: 'Teresa',
     lastName: 'Armstrong',
+
     email: 'tarmstrong-qp@ndp.on.ca',
     ridingName: 'London—Fanshawe',
   },
+
   {
     firstName: 'Ted',
     lastName: 'Arnott',
     email: 'ted.arnott@pc.ola.org',
+
     ridingName: 'Wellington—Halton Hills',
   },
   {
     firstName: 'Ian',
     lastName: 'Arthur',
+
     email: 'IArthur-QP@ndp.on.ca',
+
     ridingName: 'Kingston and the Islands',
   },
   {
     firstName: 'Roman',
     lastName: 'Baber',
+
     email: 'rbaber@ola.org',
+
     ridingName: 'York Centre',
   },
   {
     firstName: 'Aris',
     lastName: 'Babikian',
+
     email: 'aris.babikian@pc.ola.org',
+
     ridingName: 'Scarborough—Agincourt',
+  },
+  {
+    firstName: 'Toby',
+    lastName: 'Barrett',
+    email: 'toby.barrett@pc.ola.org',
+    ridingName: 'Haldimand—Norfolk',
   },
   {
     firstName: 'Doly',
@@ -60,6 +79,12 @@ export const MPS = [
     ridingName: 'Beaches—East York',
   },
   {
+    firstName: 'Peter',
+    lastName: 'Bethlenfalvy',
+    email: 'peter.bethlenfalvy@pc.ola.org',
+    ridingName: 'Pickering—Uxbridge',
+  },
+  {
     firstName: 'Gilles',
     lastName: 'Bisson',
     email: 'gbisson@ndp.on.ca',
@@ -70,6 +95,12 @@ export const MPS = [
     lastName: 'Blais',
     email: 'sblais.mpp.co@liberal.ola.org',
     ridingName: 'Orléans',
+  },
+  {
+    firstName: 'Will',
+    lastName: 'Bouma',
+    email: 'will.bouma@pc.ola.org',
+    ridingName: 'Brantford—Brant',
   },
   {
     firstName: 'Guy',
@@ -90,6 +121,24 @@ export const MPS = [
     ridingName: 'Markham—Stouffville',
   },
   {
+    firstName: 'Raymond Sung Joon',
+    lastName: 'Cho',
+    email: 'raymond.cho@pc.ola.org',
+    ridingName: 'Scarborough North',
+  },
+  {
+    firstName: 'Stan',
+    lastName: 'Cho',
+    email: 'stan.cho@pc.ola.org',
+    ridingName: 'Willowdale',
+  },
+  {
+    firstName: 'Steve',
+    lastName: 'Clark',
+    email: 'steve.clark@pc.ola.org',
+    ridingName: 'Leeds—Grenville—Thousand Islands and Rideau Lakes',
+  },
+  {
     firstName: 'Lorne',
     lastName: 'Coe',
     email: 'lorne.coe@pc.ola.org',
@@ -106,6 +155,43 @@ export const MPS = [
     lastName: 'Coteau',
     email: 'mcoteau.mpp.co@liberal.ola.org',
     ridingName: 'Don Valley East',
+  },
+  {
+    firstName: 'Stephen',
+    lastName: 'Crawford',
+    email: 'stephen.crawford@pc.ola.org',
+    ridingName: 'Oakville',
+  },
+  {
+    firstName: 'Rudy',
+    lastName: 'Cuzzetto',
+    email: 'rudy.cuzzetto@pc.ola.org',
+    ridingName: 'Mississauga—Lakeshore',
+  },
+  {
+    firstName: 'Doug',
+    lastName: 'Downey',
+    email: 'doug.downey@pc.ola.org',
+    ridingName: 'Barrie—Springwater—Oro-Medonte',
+  },
+  {
+    firstName: 'Jill',
+    lastName: 'Dunlop',
+    email: 'jill.dunlop@pc.ola.org',
+    ridingName: 'Simcoe North',
+  },
+
+  {
+    firstName: 'Christine',
+    lastName: 'Elliott',
+    email: 'christine.elliott@pc.ola.org',
+    ridingName: 'Newmarket—Aurora',
+  },
+  {
+    firstName: 'Victor',
+    lastName: 'Fedeli',
+    email: 'vic.fedeli@pc.ola.org',
+    ridingName: 'Nipissing',
   },
   {
     firstName: 'Amy',
@@ -138,6 +224,12 @@ export const MPS = [
     ridingName: 'Oshawa',
   },
   {
+    firstName: 'Merrilee',
+    lastName: 'Fullerton',
+    email: 'merrilee.fullerton@pc.ola.org',
+    ridingName: 'Kanata—Carleton',
+  },
+  {
     firstName: 'Wayne',
     lastName: 'Gates',
     email: 'wgates-qp@ndp.on.ca',
@@ -148,6 +240,12 @@ export const MPS = [
     lastName: 'Ghamari',
     email: 'goldie.ghamari@pc.ola.org',
     ridingName: 'Carleton',
+  },
+  {
+    firstName: 'Parm',
+    lastName: 'Gill',
+    email: 'parm.gill@pc.ola.org',
+    ridingName: 'Milton',
   },
   {
     firstName: 'Chris',
@@ -174,10 +272,22 @@ export const MPS = [
     ridingName: 'Nickel Belt',
   },
   {
+    firstName: 'Ernie',
+    lastName: 'Hardeman',
+    email: 'ernie.hardeman@pc.ola.org',
+    ridingName: 'Oxford',
+  },
+  {
     firstName: 'Joel',
     lastName: 'Harden',
     email: 'JHarden-QP@ndp.on.ca',
     ridingName: 'Ottawa Centre',
+  },
+  {
+    firstName: 'Mike',
+    lastName: 'Harris',
+    email: 'mike.harris@pc.ola.org',
+    ridingName: 'Kitchener—Conestoga',
   },
   {
     firstName: 'Faisal',
@@ -198,6 +308,12 @@ export const MPS = [
     ridingName: 'Lanark—Frontenac—Kingston',
   },
   {
+    firstName: 'Christine',
+    lastName: 'Hogarth',
+    email: 'christine.hogarth@pc.ola.org',
+    ridingName: 'Etobicoke—Lakeshore',
+  },
+  {
     firstName: 'Andrea',
     lastName: 'Horwath',
     email: 'horwatha-qp@ndp.on.ca',
@@ -208,6 +324,12 @@ export const MPS = [
     lastName: 'Hunter',
     email: 'mhunter.mpp.co@liberal.ola.org',
     ridingName: 'Scarborough—Guildwood',
+  },
+  {
+    firstName: 'Sylvia',
+    lastName: 'Jones',
+    email: 'sylvia.jones@pc.ola.org',
+    ridingName: 'Dufferin—Caledon',
   },
   {
     firstName: 'Logan',
@@ -228,10 +350,22 @@ export const MPS = [
     ridingName: 'Parkdale—High Park',
   },
   {
+    firstName: 'Vincent',
+    lastName: 'Ke',
+    email: 'vincent.ke@pc.ola.org',
+    ridingName: 'Don Valley North',
+  },
+  {
     firstName: 'Terence',
     lastName: 'Kernaghan',
     email: 'TKernaghan-QP@ndp.on.ca',
     ridingName: 'London North Centre',
+  },
+  {
+    firstName: 'Andrea',
+    lastName: 'Khanjin',
+    email: 'andrea.khanjin@pc.ola.org',
+    ridingName: 'Barrie—Innisfil',
   },
   {
     firstName: 'Daryl',
@@ -240,10 +374,29 @@ export const MPS = [
     ridingName: 'Hastings—Lennox and Addington',
   },
   {
+    firstName: 'Natalia',
+    lastName: 'Kusendova',
+    email: 'natalia.kusendova@pc.ola.org',
+    ridingName: 'Mississauga Centre',
+  },
+  {
+    firstName: 'Stephen',
+    lastName: 'Lecce',
+    email: 'stephen.lecce@pc.ola.org',
+    ridingName: 'King—Vaughan',
+  },
+
+  {
     firstName: 'Laura Mae',
     lastName: 'Lindo',
     email: 'LLindo-QP@ndp.on.ca',
     ridingName: 'Kitchener Centre',
+  },
+  {
+    firstName: 'Lisa',
+    lastName: 'MacLeod',
+    email: 'Lisa.macleodco@pc.ola.org',
+    ridingName: 'Nepean',
   },
   {
     firstName: 'Sol',
@@ -258,10 +411,40 @@ export const MPS = [
     ridingName: 'Algoma—Manitoulin',
   },
   {
+    firstName: 'Robin',
+    lastName: 'Martin',
+    email: 'robin.martin@pc.ola.org',
+    ridingName: 'Eglinton—Lawrence',
+  },
+  {
     firstName: 'Gila',
     lastName: 'Martow',
     email: 'gila.martow@pc.ola.org',
     ridingName: 'Thornhill',
+  },
+  {
+    firstName: 'Jim',
+    lastName: 'McDonell',
+    email: 'jim.mcdonell@pc.ola.org',
+    ridingName: 'Stormont—Dundas—South Glengarry',
+  },
+  {
+    firstName: 'Jane',
+    lastName: 'McKenna',
+    email: 'jane.mckenna@pc.ola.org',
+    ridingName: 'Burlington',
+  },
+  {
+    firstName: 'Monte',
+    lastName: 'McNaughton',
+    email: 'monte.mcnaughtonco@pc.ola.org',
+    ridingName: 'Lambton—Kent—Middlesex',
+  },
+  {
+    firstName: 'Norman',
+    lastName: 'Miller',
+    email: 'norm.miller@pc.ola.org',
+    ridingName: 'Parry Sound—Muskoka',
   },
   {
     firstName: 'Paul',
@@ -287,6 +470,14 @@ export const MPS = [
     email: 'SMorrison-QP@ndp.on.ca',
     ridingName: 'Toronto Centre',
   },
+
+  {
+    firstName: 'Caroline',
+    lastName: 'Mulroney',
+    email: 'caroline.mulroney@pc.ola.org',
+    ridingName: 'York—Simcoe',
+  },
+
   {
     firstName: 'Taras',
     lastName: 'Natyshak',
@@ -300,11 +491,48 @@ export const MPS = [
     ridingName: 'Chatham-Kent—Leamington',
   },
   {
+    firstName: 'Sam',
+    lastName: 'Oosterhoff',
+    email: 'sam.oosterhoff@pc.ola.org',
+    ridingName: 'Niagara West',
+  },
+  {
+    firstName: 'Billy',
+    lastName: 'Pang',
+    email: 'billy.pang@pc.ola.org',
+    ridingName: 'Markham—Unionville',
+  },
+  {
+    firstName: 'Lindsey',
+    lastName: 'Park',
+    email: 'lindsey.park@pc.ola.org',
+    ridingName: 'Durham',
+  },
+  {
+    firstName: 'Michael',
+    lastName: 'Parsa',
+    email: 'michael.parsaco@pc.ola.org',
+    ridingName: 'Aurora—Oak Ridges—Richmond Hill',
+  },
+  {
+    firstName: 'Randy',
+    lastName: 'Pettapiece',
+    email: 'randy.pettapiece@pc.ola.org',
+    ridingName: 'Perth—Wellington',
+  },
+  {
     firstName: 'Rod',
     lastName: 'Phillips',
     email: 'rod.phillips@pc.ola.org',
     ridingName: 'Ajax',
   },
+  {
+    firstName: 'David',
+    lastName: 'Piccini',
+    email: 'david.piccini@pc.ola.org',
+    ridingName: 'Northumberland—Peterborough South',
+  },
+
   {
     firstName: 'Tom',
     lastName: 'Rakocevic',
@@ -318,12 +546,44 @@ export const MPS = [
     ridingName: 'Mississauga East—Cooksville',
   },
   {
+    firstName: 'Greg',
+    lastName: 'Rickford',
+    email: 'greg.rickford@pc.ola.org',
+    ridingName: 'Kenora—Rainy River',
+  },
+  {
+    firstName: 'Jeremy',
+    lastName: 'Roberts',
+    email: 'jeremy.roberts@pc.ola.org',
+    ridingName: 'Ottawa West—Nepean',
+  },
+
+  {
+    firstName: 'Ross',
+    lastName: 'Romano',
+    email: 'ross.romano@pc.ola.org',
+    ridingName: 'Sault Ste. Marie',
+  },
+  {
+    firstName: 'Sheref',
+    lastName: 'Sabawy',
+    email: 'sheref.sabawy@pc.ola.org',
+    ridingName: 'Mississauga—Erin Mills',
+  },
+
+  {
     firstName: 'Amarjot',
     lastName: 'Sandhu',
     email: 'amarjot.sandhu@pc.ola.org',
-
     ridingName: 'Brampton West',
   },
+  {
+    firstName: 'Prabmeet Singh',
+    lastName: 'Sarkaria',
+    email: 'prabmeet.sarkaria@pc.ola.org',
+    ridingName: 'Brampton South',
+  },
+
   {
     firstName: 'Peggy',
     lastName: 'Sattler',
@@ -333,25 +593,25 @@ export const MPS = [
   {
     firstName: 'Mike',
     lastName: 'Schreiner',
-
     email: 'Mschreiner@ola.org',
-
     ridingName: 'Guelph',
+  },
+  {
+    firstName: 'Laurie',
+    lastName: 'Scott',
+    email: 'laurie.scott@pc.ola.org',
+    ridingName: 'Haliburton—Kawartha Lakes—Brock',
   },
   {
     firstName: 'Sandy',
     lastName: 'Shaw',
-
     email: 'SShaw-CO@ndp.on.ca',
-
     ridingName: 'Hamilton West—Ancaster—Dundas',
   },
   {
     firstName: 'Amanda',
     lastName: 'Simard',
-
     email: 'asimard.mpp@liberal.ola.org',
-
     ridingName: 'Glengarry—Prescott—Russell',
   },
   {
@@ -367,6 +627,24 @@ export const MPS = [
     ridingName: 'Brampton Centre',
   },
   {
+    firstName: 'Donna',
+    lastName: 'Skelly',
+    email: 'donna.skelly@pc.ola.org',
+    ridingName: 'Flamborough—Glanbrook',
+  },
+  {
+    firstName: 'Dave',
+    lastName: 'Smith',
+    email: 'dave.smith@pc.ola.org',
+    ridingName: 'Peterborough—Kawartha',
+  },
+  {
+    firstName: 'Todd',
+    lastName: 'Smith',
+    email: 'todd.smithco@pc.ola.org',
+    ridingName: 'Bay of Quinte',
+  },
+  {
     firstName: 'Jennifer (Jennie)',
     lastName: 'Stevens',
     email: 'JStevens-QP@ndp.on.ca',
@@ -379,10 +657,22 @@ export const MPS = [
     ridingName: 'Davenport',
   },
   {
+    firstName: 'Kinga',
+    lastName: 'Surma',
+    email: 'kinga.surma@pc.ola.org',
+    ridingName: 'Etobicoke Centre',
+  },
+  {
     firstName: 'Peter',
     lastName: 'Tabuns',
     email: 'tabunsp-qp@ndp.on.ca',
     ridingName: 'Toronto—Danforth',
+  },
+  {
+    firstName: 'Nina',
+    lastName: 'Tangri',
+    email: 'nina.tangri@pc.ola.org',
+    ridingName: 'Mississauga—Streetsville',
   },
   {
     firstName: 'Monique',
@@ -391,10 +681,46 @@ export const MPS = [
     ridingName: 'Hamilton Mountain',
   },
   {
+    firstName: 'Vijay',
+    lastName: 'Thanigasalam',
+    email: 'vijay.thanigasalam@pc.ola.org',
+    ridingName: 'Scarborough—Rouge Park',
+  },
+  {
+    firstName: 'Lisa',
+    lastName: 'Thompson',
+    email: 'lisa.thompson@pc.ola.org',
+    ridingName: 'Huron—Bruce',
+  },
+  {
+    firstName: 'Michael A.',
+    lastName: 'Tibollo',
+    email: 'michael.tibolloCO@pc.ola.org',
+    ridingName: 'Vaughan—Woodbridge',
+  },
+  {
+    firstName: 'Effie J.',
+    lastName: 'Triantafilopoulos',
+    email: 'effie.triantafilopoulos@pc.ola.org',
+    ridingName: 'Oakville North—Burlington',
+  },
+  {
     firstName: 'John',
     lastName: 'Vanthof',
     email: 'jvanthof-qp@ndp.on.ca',
     ridingName: 'Timiskaming—Cochrane',
+  },
+  {
+    firstName: 'Daisy',
+    lastName: 'Wai',
+    email: 'daisy.wai@pc.ola.org',
+    ridingName: 'Richmond Hill',
+  },
+  {
+    firstName: 'Bill',
+    lastName: 'Walker',
+    email: 'bill.walker@pc.ola.org',
+    ridingName: 'Bruce—Grey—Owen Sound',
   },
   {
     firstName: 'Jamie',
@@ -415,9 +741,21 @@ export const MPS = [
     ridingName: 'Don Valley West',
   },
   {
+    firstName: 'John',
+    lastName: 'Yakabuski',
+    email: 'john.yakabuski@pc.ola.org',
+    ridingName: 'Renfrew—Nipissing—Pembroke',
+  },
+  {
     firstName: 'Kevin',
     lastName: 'Yarde',
     email: 'KYarde-QP@ndp.on.ca',
     ridingName: 'Brampton North',
+  },
+  {
+    firstName: 'Jeff',
+    lastName: 'Yurek',
+    email: 'jeff.yurek@pc.ola.org',
+    ridingName: 'Elgin—Middlesex—London',
   },
 ]
