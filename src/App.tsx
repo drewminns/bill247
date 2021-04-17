@@ -80,7 +80,10 @@ export const App = () => {
                   use this link to search by your postal code.
                 </a>
               </li>
-              <li>Fill out your personal information to generate an email to send.</li>
+              <li>
+                Fill out your personal information to generate an email to send. We will send a copy to you, your MPP
+                and the elected leaders of the provincial parties.
+              </li>
               <li>Press send!</li>
             </ol>
           </div>

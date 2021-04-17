@@ -11,7 +11,7 @@ const sendEmail = async ({ name, email, from, body }: any) => {
       name,
       email: 'community@usegoodnbr.com',
     },
-    cc: from,
+    cc: [from, 'doug.fordco@pc.ola.org', 'horwatha-qp@ndp.on.ca'],
     reply_to: from,
     subject: `Constituent Request - ${name} supports Bill 247`,
     html: body,
