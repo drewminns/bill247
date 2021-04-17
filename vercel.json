@@ -1,0 +1,7 @@
+{
+  "name": "bill247",
+  "version": 2,
+  "env": {
+    "sendgrid_bill247_key": "@sendgrid_bill247_key"
+  }
+}

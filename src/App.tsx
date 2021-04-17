@@ -7,7 +7,6 @@ import { MPS } from './mps'
 type MPState = { ridingName: string; firstName: string; lastName: string; email: string }
 
 export const App = () => {
-  console.log(MPS.length)
   const [fieldValues, setFieldValues] = useState<FormState | null>(null)
   const [mpValues, setMPValues] = useState<MPState | null>(null)
 

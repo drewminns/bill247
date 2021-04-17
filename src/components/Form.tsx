@@ -27,8 +27,6 @@ export const Form = ({ formCallback }: { formCallback: any }) => {
     },
   })
   const onSubmit = (data: FormState) => formCallback(data)
-
-  console.log(errors)
   return (
     <div>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-wrap">
