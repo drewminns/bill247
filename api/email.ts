@@ -18,6 +18,7 @@ const sendEmail = async ({ name, email, from, body }: any) => {
   }
   try {
     await sgMail.send(msg)
+    console.log('')
   } catch (error) {
     console.error(error)
     throw new Error(error)
@@ -29,6 +30,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
     const { name, email, from, body } = JSON.parse(req.body)
     try {
       await sendEmail({ name, email, from, body })
+      console.log('sent', email, name, from)
       return res.status(200).json({ success: true })
     } catch (err) {
       return res.status(200).json({ success: false })
