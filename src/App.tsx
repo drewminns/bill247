@@ -93,7 +93,7 @@ export const App = () => {
         </>
       ) : null}
 
-      {fieldValues && mpValues ? (
+      {fieldValues && mpValues && !success ? (
         <div className="my-6">
           <p className="text-gray-500 text-xs text-center mb-1">
             Pssst. Feel free to edit the note before you send it.
@@ -110,17 +110,21 @@ export const App = () => {
           <button className="text-white font-semibold bg-green-500 py-3 px-5 rounded-md" onClick={sendEmail}>
             Send email
           </button>
-          {success ? (
-            <div>
-              <p className="text-green-400">Sent!</p>
-              <button onClick={handleReset}>Send another?</button>
-            </div>
-          ) : null}
           {errors ? (
             <div>
               <p className="text-red-400">Error!</p>
             </div>
           ) : null}
+        </div>
+      ) : null}
+
+      {success ? (
+        <div className="text-center py-6">
+          <p className="text-green-500 text-4xl font-bold">Sent!</p>
+          <p className="text-xl">Thank you. Please share this link and ask others to contact their MPP's.</p>
+          <button onClick={handleReset} className="font-semibold py-3 px-4 bg-gray-900 text-white rounded-md mt-4">
+            Send another?
+          </button>
         </div>
       ) : null}
 

@@ -14,6 +14,7 @@ const sendEmail = async ({ name, email, from, body }: any) => {
     subject: 'Your attention on Bill 247',
     html: body,
   }
+  console.log(msg)
   try {
     await sgMail.send(msg)
   } catch (error) {
