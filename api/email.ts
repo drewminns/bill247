@@ -6,13 +6,6 @@ sgMail.setApiKey(sendgridkey)
 
 const sendEmail = async ({ name, email, from, body }: any) => {
   const cc = [from]
-  if (email !== 'horwatha-qp@ndp.on.ca') {
-    cc.push('horwatha-qp@ndp.on.ca')
-  }
-
-  if (email !== 'doug.fordco@pc.ola.org') {
-    cc.push('doug.fordco@pc.ola.org')
-  }
 
   const msg = {
     to: email,

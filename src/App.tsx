@@ -81,8 +81,8 @@ export const App = () => {
                 </a>
               </li>
               <li>
-                Fill out your personal information to generate an email to send. We will send a copy to you, your MPP
-                and the elected leaders of the provincial parties.
+                Fill out your personal information to generate an email to send. We will send a copy to you and your
+                MPP.
               </li>
               <li>Press send!</li>
             </ol>
