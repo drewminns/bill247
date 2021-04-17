@@ -122,6 +122,7 @@ export const App = () => {
         <div className="text-center py-8">
           <p className="text-green-500 text-4xl font-bold">Sent!</p>
           <p className="text-xl">Thank you. Please share this link and ask others to contact their MPP's.</p>
+          <p className="text-gray-600">You should receive a copy in your mailbox shortly.</p>
           <button onClick={handleReset} className="font-semibold py-3 px-4 bg-gray-900 text-white rounded-md mt-4">
             Send another?
           </button>
