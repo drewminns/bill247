@@ -1,10 +1,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
-const dotenv = require('dotenv')
 
 const dist = path.join(__dirname, 'dist')
-const env = dotenv.config().parsed
 
 module.exports = {
   entry: './src/index.tsx',
@@ -28,7 +26,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'postcss-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
     ],
   },
