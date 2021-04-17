@@ -14,22 +14,17 @@ const sendEmail = async ({ name, email, from, body }: any) => {
     subject: 'Your attention on Bill 247',
     html: body,
   }
-  console.log(msg)
   try {
     await sgMail.send(msg)
   } catch (error) {
     console.error(error)
-
-    if (error.response) {
-      console.error(error.response.body)
-      throw new Error(error.response.body)
-    }
+    throw new Error(error)
   }
 }
 
 export default async (req: VercelRequest, res: VercelResponse) => {
   if (req.method === 'POST') {
-    console.log(req)
+    console.log(req.body)
     const { name, email, from, body } = req.body
     try {
       await sendEmail({ name, email, from, body })
