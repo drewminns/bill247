@@ -118,7 +118,7 @@ export const App = () => {
         </ul>
       </div>
 
-      <footer className="py-8 max-w-screen-sm mx-auto text-gray-500">
+      <footer className="py-8 text-center text-gray-500">
         <span role="img" aria-label="wave emoji">
           👋
         </span>{' '}
