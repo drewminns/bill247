@@ -1,47 +1,25 @@
 import { VercelRequest, VercelResponse } from '@vercel/node'
-
-import fetch from 'node-fetch'
-
-const SENDGRID_API = 'https://api.sendgrid.com/v3/mail/send'
+import sgMail from '@sendgrid/mail'
 
 const sendgridkey = process.env.sendgrid_bill247_key || ''
+sgMail.setApiKey(sendgridkey)
 
 const sendEmail = async ({ name, email, from, body }: any) => {
-  await fetch(SENDGRID_API, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: sendgridkey,
-    },
-    body: JSON.stringify({
-      personalizations: [
-        {
-          to: [
-            {
-              email: 'dminns@gmail.com',
-            },
-          ],
-          subject: 'The importance of Bill 247',
-        },
-      ],
-      from: {
-        email: from,
-        name: name,
-      },
-      content: [
-        {
-          type: 'text/html',
-          value: body,
-        },
-      ],
-    }),
-  })
-    .then((res) => {
-      console.log(res)
-    })
-    .catch((err) => {
-      console.log(err)
-    })
+  const msg = {
+    to: 'dminns@gmail.com',
+    from,
+    subject: 'Sending with Twilio SendGrid is Fun',
+    html: body,
+  }
+  try {
+    await sgMail.send(msg)
+  } catch (error) {
+    console.error(error)
+
+    if (error.response) {
+      console.error(error.response.body)
+    }
+  }
 }
 
 export default async (req: VercelRequest, res: VercelResponse) => {
