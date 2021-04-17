@@ -24,8 +24,8 @@ const sendEmail = async ({ name, email, from, body }: any) => {
 
 export default async (req: VercelRequest, res: VercelResponse) => {
   if (req.method === 'POST') {
-    console.log(req.body)
     const { name, email, from, body } = req.body
+    console.log(name, email, from, body)
     try {
       await sendEmail({ name, email, from, body })
       return res.status(200).json({ success: true })
