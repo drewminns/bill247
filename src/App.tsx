@@ -9,6 +9,9 @@ type MPState = { ridingName: string; firstName: string; lastName: string; email:
 export const App = () => {
   const [fieldValues, setFieldValues] = useState<FormState | null>(null)
   const [mpValues, setMPValues] = useState<MPState | null>(null)
+  const [docValue, setDocValue] = useState<string | null>(null)
+  const [errors, setErrors] = useState<boolean>(false)
+  const [success, setSuccess] = useState<boolean>(false)
 
   const handleFormCallback = (data: FormState) => {
     const mp = MPS.filter((mps) => mps.ridingName === data.riding)[0]
@@ -16,7 +19,25 @@ export const App = () => {
     setFieldValues(data)
   }
 
-  const sendEmail = () => {}
+  const sendEmail = async () => {
+    const body = {
+      name: fieldValues?.name,
+      from: fieldValues?.email,
+      email: 'dminns@gmail.com',
+      body: docValue,
+    }
+    try {
+      setErrors(false)
+      await fetch('api/email', {
+        method: 'post',
+        body: JSON.stringify(body),
+      })
+      setSuccess(true)
+    } catch (err) {
+      setSuccess(false)
+      setErrors(true)
+    }
+  }
 
   return (
     <div className="px-2 md:px-0 container mx-auto max-w-screen-md">
@@ -75,11 +96,13 @@ export const App = () => {
               firstName={mpValues?.firstName || ''}
               lastName={mpValues?.lastName || ''}
               postalCode={fieldValues.postalcode || ''}
+              handleChangeCB={setDocValue}
             />
           </div>
           <button className="text-white font-semibold bg-green-500 py-3 px-5 rounded-md" onClick={sendEmail}>
             Send email
           </button>
+          {success ? <p className="text-sm text-green-400">Sent!</p> : null}
         </div>
       ) : null}
 

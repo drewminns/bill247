@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { HtmlEditor, Editor } from '@aeaton/react-prosemirror'
 import { plugins, schema } from '@aeaton/react-prosemirror-config-default'
 
-type DocProps = { name: string; firstName: string; lastName: string; postalCode: string }
+type DocProps = { name: string; firstName: string; lastName: string; postalCode: string; handleChangeCB: any }
 
-export const Doc = ({ name, firstName, lastName, postalCode }: DocProps) => {
+export const Doc = ({ name, firstName, lastName, postalCode, handleChangeCB }: DocProps) => {
   const initialValue = `
     <p>Dear ${firstName} ${lastName}</p>
     <p></p>
@@ -30,8 +30,13 @@ export const Doc = ({ name, firstName, lastName, postalCode }: DocProps) => {
   `
   const [value, setValue] = useState(initialValue)
 
+  const handleChange = (docValue: any) => {
+    setValue(docValue)
+    handleChangeCB(docValue)
+  }
+
   return (
-    <HtmlEditor schema={schema} plugins={plugins} value={value} handleChange={setValue} debounce={250}>
+    <HtmlEditor schema={schema} plugins={plugins} value={value} handleChange={handleChange} debounce={250}>
       <Editor />
     </HtmlEditor>
   )
