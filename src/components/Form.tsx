@@ -52,6 +52,7 @@ export const Form = ({ formCallback }: { formCallback: any }) => {
           <span className="text-gray-700">Your Postal Code</span>
           <input
             type="text"
+            autoComplete="off"
             {...register('postalcode', {
               required: true,
               pattern: /[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d/,
