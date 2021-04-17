@@ -85,9 +85,13 @@ export const App = () => {
         <span role="img" aria-label="wave emoji">
           👋
         </span>{' '}
-        Brought to you by the crew at{' '}
+        Created by the wonderful humans at
         <a href="https://usegoodnbr.com" className="text-purple-600">
-          Good Neighbour.
+          Good Neighbour
+        </a>{' '}
+        and{' '}
+        <a href="https://dvxd.co" className="text-purple-600">
+          DVXD
         </a>
       </footer>
     </div>

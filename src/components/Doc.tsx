@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { HtmlEditor, Toolbar, Editor } from '@aeaton/react-prosemirror'
-import { plugins, schema, toolbar } from '@aeaton/react-prosemirror-config-default'
+import { HtmlEditor, Editor } from '@aeaton/react-prosemirror'
+import { plugins, schema } from '@aeaton/react-prosemirror-config-default'
 
 type DocProps = { name: string; firstName: string; lastName: string }
 
