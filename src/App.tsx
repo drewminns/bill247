@@ -132,31 +132,40 @@ export const App = () => {
         <h2 className="text-3xl font-bold mb-6">Resources</h2>
         <ul className="list-inside list-disc space-y-3 text-sm underline">
           <li>
-            <a href="https://springmag.ca/the-fight-for-paid-sick-days-isnt-over">
-              https://springmag.ca/the-fight-for-paid-sick-days-isnt-over
+            <a
+              href="https://springmag.ca/the-fight-for-paid-sick-days-isnt-over"
+              title="The fight for paid sick days isn’t over"
+            >
+              The fight for paid sick days isn’t over
             </a>
           </li>
           <li>
-            <a href="https://www.15andfairness.org/paid_sick_days_for_all">
-              https://www.15andfairness.org/paid_sick_days_for_all
+            <a href="https://www.15andfairness.org/paid_sick_days_for_all" title="Help us win paid sick days for all">
+              Help us win paid sick days for all
             </a>
           </li>
           <li>
-            <a href="https://www.thestar.com/amp/news/gta/2021/04/16/ontarians-strongly-favour-paid-sick-days-poll-finds.html">
-              https://www.thestar.com/amp/news/gta/2021/04/16/ontarians-strongly-favour-paid-sick-days-poll-finds.html
+            <a
+              href="https://www.thestar.com/amp/news/gta/2021/04/16/ontarians-strongly-favour-paid-sick-days-poll-finds.html"
+              title="Ontarians strongly favour paid sick days, poll finds"
+            >
+              Ontarians strongly favour paid sick days, poll finds
             </a>
           </li>
           <li>
-            <a href="https://www.cbc.ca/amp/1.5907723">https://www.cbc.ca/amp/1.5907723</a>
-          </li>
-          <li>
-            <a href="https://theonn.ca/paid-sick-days-can-help-us-beat-the-pandemic/">
-              https://theonn.ca/paid-sick-days-can-help-us-beat-the-pandemic/
+            <a
+              href="https://www.cbc.ca/amp/1.5907723"
+              title="'Small investment, big payback': Business owners call on Ford government to legislate paid sick leave"
+            >
+              'Small investment, big payback': Business owners call on Ford government to legislate paid sick leave
             </a>
           </li>
           <li>
-            <a href="https://theonn.ca/paid-sick-days-can-help-us-beat-the-pandemic/">
-              https://theonn.ca/paid-sick-days-can-help-us-beat-the-pandemic/
+            <a
+              href="https://theonn.ca/paid-sick-days-can-help-us-beat-the-pandemic/"
+              title="Paid sick days can help us beat the pandemic"
+            >
+              Paid sick days can help us beat the pandemic
             </a>
           </li>
         </ul>
