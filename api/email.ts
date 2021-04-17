@@ -6,12 +6,13 @@ sgMail.setApiKey(sendgridkey)
 
 const sendEmail = async ({ name, email, from, body }: any) => {
   const msg = {
-    to: email,
+    to: 'dminns@gmail.com',
     from: {
       name,
-      email: from,
+      email: 'community@usegoodnbr.com',
     },
-    subject: 'Your attention on Bill 247',
+    reply_to: from,
+    subject: `Constituent Request - ${name} supports Bill 247`,
     html: body,
   }
   try {

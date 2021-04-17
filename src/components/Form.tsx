@@ -29,8 +29,8 @@ export const Form = ({ formCallback }: { formCallback: any }) => {
   const onSubmit = (data: FormState) => formCallback(data)
   return (
     <div>
-      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-wrap">
-        <label htmlFor="emailAddress" className="block w-1/2 mb-4 pr-6">
+      <form onSubmit={handleSubmit(onSubmit)} className="md:flex flex-wrap">
+        <label htmlFor="emailAddress" className="block md:w-1/2 mb-4 md:pr-6">
           <span className="text-gray-700">Email Address</span>
           <input
             type="email"
@@ -39,7 +39,7 @@ export const Form = ({ formCallback }: { formCallback: any }) => {
           />
           {errors.emailAddress ? <p className="text-sm text-red-500">Your email is required</p> : null}
         </label>
-        <label htmlFor="name" className="block w-1/2 mb-4 pr-6">
+        <label htmlFor="name" className="block md:w-1/2 mb-4 md:pr-6">
           <span className="text-gray-700">Your name</span>
           <input
             type="text"
@@ -48,7 +48,7 @@ export const Form = ({ formCallback }: { formCallback: any }) => {
           />
           {errors.name ? <p className="text-sm text-red-500">Name is required</p> : null}
         </label>
-        <label htmlFor="name" className="block w-1/2 mb-4 pr-6">
+        <label htmlFor="name" className="block md:w-1/2 mb-4 md:pr-6">
           <span className="text-gray-700">Your Postal Code</span>
           <input
             type="text"
@@ -60,7 +60,7 @@ export const Form = ({ formCallback }: { formCallback: any }) => {
           />
           {errors.postalcode ? <p className="text-sm text-red-500">Please provide a valid postal code</p> : null}
         </label>
-        <label htmlFor="riding" className="block w-1/2 mb-4 pr-6">
+        <label htmlFor="riding" className="block md:w-1/2 mb-4 md:pr-6">
           <span className="text-gray-700">Your riding</span>
           <select
             defaultValue="ajax"
